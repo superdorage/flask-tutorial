@@ -23,7 +23,7 @@ def create_app(test_config=None):
 
 
     @app.route('/')
-    def index():
+    def ping():
         return 'Flask is running..'
     
     from . import db, auth
